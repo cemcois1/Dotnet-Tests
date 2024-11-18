@@ -1,18 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/Dotnet Tests.csproj": {}
+    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {}
   },
   "projects": {
-    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/Dotnet Tests.csproj": {
+    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/Dotnet Tests.csproj",
-        "projectName": "Dotnet Tests",
-        "projectPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/Dotnet Tests.csproj",
+        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
+        "projectName": "ConsoleApp",
+        "projectPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
         "packagesPath": "/Users/cemalcanyildirim/.nuget/packages/",
-        "outputPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/obj/",
+        "outputPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/cemalcanyildirim/.nuget/NuGet/NuGet.Config"
         ],
@@ -37,8 +38,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net9.0": {

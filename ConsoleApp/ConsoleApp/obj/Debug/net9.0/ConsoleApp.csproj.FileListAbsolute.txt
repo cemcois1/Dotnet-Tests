@@ -1,0 +1,15 @@
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/bin/Debug/net9.0/ConsoleApp
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/bin/Debug/net9.0/ConsoleApp.deps.json
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/bin/Debug/net9.0/ConsoleApp.runtimeconfig.json
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/bin/Debug/net9.0/ConsoleApp.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/bin/Debug/net9.0/ConsoleApp.pdb
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.AssemblyInfoInputs.cache
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.AssemblyInfo.cs
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.csproj.CoreCompileInputs.cache
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.sourcelink.json
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/refint/ConsoleApp.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.pdb
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ConsoleApp.genruntimeconfig.cache
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/Debug/net9.0/ref/ConsoleApp.dll
