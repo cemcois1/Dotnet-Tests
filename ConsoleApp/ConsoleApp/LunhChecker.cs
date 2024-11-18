@@ -1,6 +1,22 @@
-public static class LunhChecker
+using ConsoleApp;
+
+public  class LunhChecker
 {
-    public static void Check(string cardNumber)
+    private static LunhChecker _instance = null;
+
+    public static LunhChecker Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new LunhChecker();
+            }
+
+            return _instance;
+        }
+    }
+    public  void Check(string cardNumber)
     {
         var sum = 0;
 
@@ -27,10 +43,13 @@ public static class LunhChecker
         if (sum % 10 == 0)
         {
             Console.WriteLine("Geçerli kart numarası");
+            ActionTests.OnLunnhCheck?.Invoke(true);
         }
         else
         {
             Console.WriteLine($"Geçersiz kart numarası {sum}");
+            ActionTests.OnLunnhCheck?.Invoke(false);
+
         }
     }
 }

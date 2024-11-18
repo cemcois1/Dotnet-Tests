@@ -1,0 +1,4 @@
+@ToDoAPI_HostAddress = http://localhost:5124
+
+GET {{ToDoAPI_HostAddress}}/api/TodoList/Allü
+Accept: application/json
