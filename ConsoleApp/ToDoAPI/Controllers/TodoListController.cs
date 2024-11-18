@@ -18,8 +18,12 @@ public class TodoListController : ControllerBase
     [HttpPost]
     public ActionResult CreateToDoItem([FromBody] ToDoItem toDoItem)
     {
+        if (_toDoRepository.GetToDoItem(toDoItem.Id)!=null)
+        {
+            return BadRequest("Item already exists");
+        }
         _toDoRepository.AddToDoItem(toDoItem);
-        return Ok();
+        return Ok("Item added successfully");
     }
     
     [HttpGet("All")]
@@ -28,7 +32,7 @@ public class TodoListController : ControllerBase
         var toDoList = _toDoRepository.GetToDoItems();
         if (toDoList.Count==0)
         {
-            return NotFound();
+            return NotFound("No item found");
         }
         return Ok(toDoList);
     }
@@ -40,29 +44,41 @@ public class TodoListController : ControllerBase
     {
         if (_toDoRepository.GetToDoItem(id)==null)
         {
-            return NotFound();
+            return NotFound("No item found");
         }
         return Ok(_toDoRepository.GetToDoItem(id));
     }
       
-    //update 
+    //update
     [HttpPut("{id}")]
     public ActionResult UpdateToDoItem(int id, [FromBody] ToDoItem toDoItem)
     {
         var existingToDoItem = _toDoRepository.GetToDoItem(id);
         if (existingToDoItem == null)
         {
-            return NotFound();
+            return NotFound("No item found");
         }
-        existingToDoItem.title = toDoItem.title;
-        existingToDoItem.isCompleted = toDoItem.isCompleted;
+
+        //eğer bütün özellikleri aynıysa update yapmasın
+        if (existingToDoItem.Equals(toDoItem))
+        {
+            return Ok("Nothing to update");
+            
+        }
+        existingToDoItem.Title = toDoItem.Title;
+        existingToDoItem.IsCompleted = toDoItem.IsCompleted;
         _toDoRepository.UpdateToDoItem(existingToDoItem);
-        return Ok();
+        return Ok("Item updated successfully");
     }
-
-
-
     
-    
-    
+    [HttpDelete("{id}")]
+    public ActionResult DeleteToDoItem(int id)
+    {
+        if (_toDoRepository.GetToDoItem(id)==null)
+        {
+            return NotFound("No item found");
+        }
+        _toDoRepository.DeleteToDoItem(id);
+        return Ok("Item deleted successfully");
+    }
 }

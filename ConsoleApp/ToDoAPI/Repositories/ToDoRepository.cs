@@ -6,9 +6,9 @@ public class ToDoRepository
 {
     private readonly List<ToDoItem> _toDoItems = new List<ToDoItem>()
     {
-        new ToDoItem { id = 1, title = "Learn C#", isCompleted = false },
-        new ToDoItem { id = 2, title = "Learn ASP.NET Core Web API", isCompleted = false },
-        new ToDoItem { id = 3, title = "Learn Entity Framework Core", isCompleted = false }
+        new ToDoItem { Id = 1, Title = "Learn C#", IsCompleted = false },
+        new ToDoItem { Id = 2, Title = "Learn ASP.NET Core Web API", IsCompleted = false },
+        new ToDoItem { Id = 3, Title = "Learn Entity Framework Core", IsCompleted = false }
     };
     
     public List<ToDoItem> GetToDoItems()
@@ -16,9 +16,9 @@ public class ToDoRepository
         return _toDoItems;
     }
     
-    public ToDoItem GetToDoItem(int id)
+    public ToDoItem? GetToDoItem(int id)
     {
-        return _toDoItems.FirstOrDefault(x => x.id == id);
+        return _toDoItems.FirstOrDefault(x => x.Id == id);
     }
     
     public void AddToDoItem(ToDoItem toDoItem)
@@ -28,16 +28,16 @@ public class ToDoRepository
     
     public void UpdateToDoItem(ToDoItem toDoItem)
     {
-        var existingToDoItem = _toDoItems.FirstOrDefault(x => x.id == toDoItem.id);
+        var existingToDoItem = _toDoItems.FirstOrDefault(x => x.Id == toDoItem.Id);
         if (existingToDoItem != null)
         {
-            existingToDoItem.title = toDoItem.title;
-            existingToDoItem.isCompleted = toDoItem.isCompleted;
+            existingToDoItem.Title = toDoItem.Title;
+            existingToDoItem.IsCompleted = toDoItem.IsCompleted;
         }
     }
     public void DeleteToDoItem(int id)
     {
-        var toDoItem = _toDoItems.FirstOrDefault(x => x.id == id);
+        var toDoItem = _toDoItems.FirstOrDefault(x => x.Id == id);
         if (toDoItem != null)
         {
             _toDoItems.Remove(toDoItem);
