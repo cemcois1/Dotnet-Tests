@@ -2,11 +2,12 @@ namespace ToDoAPI.MiddleWare;
 
 public class LoggingMiddleWare: IMiddleware
 {
+    public  static readonly string LogFilePath = "logs.txt";
     public async Task InvokeAsync(HttpContext context, RequestDelegate next)
     {
-        Console.WriteLine($"Method: {context.Request.Method}");
-        Console.WriteLine($"Request: {context.Request.Path}");
-        
+        var logMessage = $"{DateTime.Now}\n";
+        logMessage += $"API Request: {context.Request.Method}: {context.Request.Scheme} {context.Request.Host}{context.Request.Path}{context.Request.QueryString}\n";
+
         context.Request.EnableBuffering();
         
         //gönderilen sorguyu yazdır 
@@ -15,17 +16,26 @@ public class LoggingMiddleWare: IMiddleware
             using (var reader = new StreamReader(context.Request.Body, leaveOpen: true))
             {
                 var body = await reader.ReadToEndAsync();
-                Console.WriteLine($"Body: {body}");
+                logMessage+= $"Request Body: {body}\n";
 
-                // Stream'i sıfırla, böylece diğer middleware veya kontrolörler kullanabilir
+                // Stream'i sıfırla, böylece diğer middleware veya kontrolörler kullanabilir 
                 context.Request.Body.Position = 0;
             }
         }
-        Console.WriteLine($"Content Type: {context.Request.ContentType}");
-        Console.WriteLine("**********************************");
+        logMessage+=($"Content Type: {context.Request.ContentType}");
+        
+        //gelen yanıt varsa yazdır
+        //datetime'ı da logla
 
         
         await next(context);
+        logMessage+=($"Response: {context.Response.StatusCode}");
+        
+        logMessage+=("\n**********************************\n");
+        
+        await File.AppendAllTextAsync(LogFilePath, logMessage);
+        
+        
     }
 }
 //extention for binding middleware
