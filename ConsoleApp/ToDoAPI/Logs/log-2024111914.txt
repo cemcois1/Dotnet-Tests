@@ -1,0 +1,127 @@
+2024-11-19 14:03:20.551 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:03:36.405 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:03:49.066 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************
+2024-11-19 14:04:04.876 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 200
+**********************************
+2024-11-19 14:04:13.708 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 200
+**********************************
+2024-11-19 14:04:16.372 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 200
+**********************************
+2024-11-19 14:04:25.620 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************
+2024-11-19 14:05:04.151 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************
+2024-11-19 14:19:02.477 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:23:56.796 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:25:11.161 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:32:04.117 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:33:40.852 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 14:34:01.389 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 200
+**********************************
+2024-11-19 14:34:10.307 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 200
+**********************************
+2024-11-19 14:34:15.690 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************
+2024-11-19 14:34:19.823 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************
+2024-11-19 14:34:22.057 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************

@@ -1,12 +1,27 @@
+using Serilog;
+using Serilog.Core;
+
 namespace ToDoAPI.MiddleWare;
 
 public class LoggingMiddleWare: IMiddleware
 {
-    public  static readonly string LogFilePath = "logs.txt";
+    public  static readonly string LogFilePath = "Logs/log-.txt";
+    
+    public Logger Logger { get; private set; }
+    
+    public LoggingMiddleWare()
+    {
+        Logger = new LoggerConfiguration().MinimumLevel.Information()
+            .WriteTo.Console()
+            .WriteTo.File(LogFilePath, rollingInterval: RollingInterval.Hour)
+            .CreateLogger();
+        
+        Log.Information("Loglama başladı!");
+    }
+    
     public async Task InvokeAsync(HttpContext context, RequestDelegate next)
     {
-        var logMessage = $"{DateTime.Now}\n";
-        logMessage += $"API Request: {context.Request.Method}: {context.Request.Scheme} {context.Request.Host}{context.Request.Path}{context.Request.QueryString}\n";
+        var logMessage = $"\nAPI Request: {context.Request.Method}: {context.Request.Scheme} {context.Request.Host}{context.Request.Path}{context.Request.QueryString}\n";
 
         context.Request.EnableBuffering();
         
@@ -31,10 +46,16 @@ public class LoggingMiddleWare: IMiddleware
         await next(context);
         logMessage+=($"Response: {context.Response.StatusCode}");
         
-        logMessage+=("\n**********************************\n");
-        
-        await File.AppendAllTextAsync(LogFilePath, logMessage);
-        
+        logMessage+=("\n**********************************");
+
+        if (context.Response.StatusCode == 200)
+        {
+            Logger.Information(logMessage);
+        }
+        else
+        {
+            Logger.Error(logMessage);
+        }
         
     }
 }
@@ -44,5 +65,6 @@ public static class LoggingMiddleWareExtentions
     public static IApplicationBuilder UseLogging(this IApplicationBuilder app)
     {
         return app.UseMiddleware<LoggingMiddleWare>();
+        
     }
 }

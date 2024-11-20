@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "VOlyQCQ14e0=",
+  "dgSpecHash": "nH8wwUiZrTs=",
   "success": true,
   "projectFilePath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/ToDoAPI.csproj",
   "expectedPackageFiles": [
     "/Users/cemalcanyildirim/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
-    "/Users/cemalcanyildirim/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+    "/Users/cemalcanyildirim/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
+    "/Users/cemalcanyildirim/.nuget/packages/serilog/4.2.0-dev-02328/serilog.4.2.0-dev-02328.nupkg.sha512",
+    "/Users/cemalcanyildirim/.nuget/packages/serilog.sinks.console/6.0.0/serilog.sinks.console.6.0.0.nupkg.sha512",
+    "/Users/cemalcanyildirim/.nuget/packages/serilog.sinks.file/6.0.0/serilog.sinks.file.6.0.0.nupkg.sha512",
+    "/Users/cemalcanyildirim/.nuget/packages/serilog.sinks.seq/9.0.0-dev-00310/serilog.sinks.seq.9.0.0-dev-00310.nupkg.sha512"
   ],
   "logs": []
 }

@@ -26,7 +26,7 @@ public class TodoListController : ControllerBase
         return Ok("Item added successfully");
     }
     
-    [HttpGet("All")]
+    [HttpGet]
     public ActionResult<List<ToDoItem>> GetAllItems()
     {
         var toDoList = _toDoRepository.GetToDoItems();
@@ -63,7 +63,6 @@ public class TodoListController : ControllerBase
         if (existingToDoItem.Equals(toDoItem))
         {
             return Ok("Nothing to update");
-            
         }
         existingToDoItem.Title = toDoItem.Title;
         existingToDoItem.IsCompleted = toDoItem.IsCompleted;

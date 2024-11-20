@@ -1,0 +1,105 @@
+2024-11-19 11:26:00.996 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:02.783 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:03.994 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:04.959 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:10.001 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:10.913 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:11.969 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:16.184 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:20.696 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:26:33.858 +03:00 [ERR] 
+API Request: GET: http localhost:5124/api/todolist/all
+Content Type: Response: 400
+**********************************
+2024-11-19 11:28:01.998 +03:00 [ERR] 
+API Request: GET: http localhost:5124/api/todolist/all
+Content Type: Response: 400
+**********************************
+2024-11-19 11:28:06.935 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/todolist/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:28:32.688 +03:00 [ERR] 
+API Request: POST: http localhost:5124/api/todolist/
+Request Body:     {
+        "id": 1,
+        "title": "Learn C#",
+        "isCompleted": false
+    }
+Content Type: application/jsonResponse: 400
+**********************************
+2024-11-19 11:41:38.786 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:41:55.995 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:43:03.430 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:43:07.942 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:43:57.089 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:43:59.809 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:44:15.132 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:44:18.302 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:44:19.803 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:44:21.232 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:48:12.255 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************
+2024-11-19 11:48:15.114 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************

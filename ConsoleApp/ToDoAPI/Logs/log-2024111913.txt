@@ -1,0 +1,4 @@
+2024-11-19 13:24:19.841 +03:00 [INF] 
+API Request: GET: http localhost:5124/api/TodoList/
+Content Type: Response: 200
+**********************************

@@ -32,3 +32,7 @@
 /Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/obj/Debug/net9.0/ToDoAPI.pdb
 /Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/obj/Debug/net9.0/ToDoAPI.genruntimeconfig.cache
 /Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/obj/Debug/net9.0/ref/ToDoAPI.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/bin/Debug/net9.0/Serilog.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/bin/Debug/net9.0/Serilog.Sinks.Console.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/bin/Debug/net9.0/Serilog.Sinks.File.dll
+/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/bin/Debug/net9.0/Serilog.Sinks.Seq.dll
