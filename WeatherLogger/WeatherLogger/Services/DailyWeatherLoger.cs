@@ -17,11 +17,11 @@ public class DailyWeatherLoger : BackgroundService, IDailyWeatherLoger
     {
         try
         {
-           var _lat = configuration.GetSection("WeatherLogger:Lat").Get<double>();
-           var  _lon = configuration.GetSection("WeatherLogger:Lon").Get<double>();
-           var  ApiKey = configuration.GetSection("WeatherLogger:APIKey").Get<string>();
+            var _lat = configuration.GetSection("WeatherLogger:Lat").Get<double>();
+            var _lon = configuration.GetSection("WeatherLogger:Lon").Get<double>();
+            var ApiKey = configuration.GetSection("WeatherLogger:APIKey").Get<string>();
             RequestURL = string.Format(configuration.GetSection("WeatherLogger:URL").Get<string>(), _lat, _lon, ApiKey);
-            ProcessLogger.Log("Daily Weather Config Load Edildi: "+RequestURL);
+            ProcessLogger.Log("Daily Weather Config Load Edildi: " + RequestURL);
         }
         catch (Exception e)
         {
@@ -36,7 +36,7 @@ public class DailyWeatherLoger : BackgroundService, IDailyWeatherLoger
         while (!stoppingToken.IsCancellationRequested)
         {
             await LogDailyWeather();
-            await Task.Delay(60000*60*24, stoppingToken);
+            await Task.Delay(60000 * 60 * 24, stoppingToken);
         }
 
         //get data from weather api
@@ -58,7 +58,7 @@ public class DailyWeatherLoger : BackgroundService, IDailyWeatherLoger
                 {
                     PropertyNameCaseInsensitive = true
                 });
-                    
+
                 ProcessLogger.Log("Hava Durumu Serialize edildi");
 
 
@@ -89,9 +89,10 @@ public class DailyWeatherLoger : BackgroundService, IDailyWeatherLoger
                 {
                     writer.WriteLine($"Tarih :{DateTime.Now} Hava durumu: {turkceContent}");
                 }
-                ProcessLogger.Log("Hava Durumu degerler kaydedildi");
 
+                ProcessLogger.Log("Hava Durumu degerler kaydedildi");
             }
+
             ProcessLogger.Log("Hava Durumu Loglama alındı");
         }
         catch (Exception e)
