@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "zrs5cGETs0eZvFRp5hoNnD3YZKESRBAyAE5Xot3dPXE=",
+  "Source": "WeatherLogger",
+  "BasePath": "_content/WeatherLogger",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
