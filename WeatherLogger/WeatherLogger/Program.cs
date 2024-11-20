@@ -1,13 +1,21 @@
 using WeatherLogger.Helpers;
 using WeatherLogger.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+try
+{
+    var builder = WebApplication.CreateBuilder(args);
 
-ProcessLogger.Configure(builder.Configuration);
-builder.Services.AddHostedService<DailyWeatherLoger>();
-builder.Services.AddControllers();
+    ProcessLogger.Configure(builder.Configuration);
+    builder.Services.AddHostedService<DailyWeatherLoger>();
+    builder.Services.AddControllers();
 
-var app = builder.Build();
+    var app = builder.Build();
 
-app.MapControllers();
-app.Run();
+    app.MapControllers();
+    app.Run();
+}
+catch (Exception e)
+{
+    Console.WriteLine("Main Error Message:" + e);
+    throw;
+}
