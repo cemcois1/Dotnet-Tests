@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "gSVLFeYhavIXS4xC0odQS0xAP0+43zICzDb+5VZQqcw=",
+  "Source": "Hangfire Test",
+  "BasePath": "_content/Hangfire Test",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

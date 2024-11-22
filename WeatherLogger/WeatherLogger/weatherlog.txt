@@ -1,1 +1,20 @@
 Tarih :20.11.2024 15:04:18 Hava durumu: Sıcaklık: 17,670000000000016 Hava Durumu: Clouds Rüzgar Yönü: Güney Rüzgar Hızı: 8,41
+Tarih :21.11.2024 11:41:53 Hava durumu: Sıcaklık: 7,670000000000016 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 6,23
+Tarih :21.11.2024 11:43:01 Hava durumu: Sıcaklık: 7,670000000000016 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 6,23
+Tarih :21.11.2024 11:43:29 Hava durumu: Sıcaklık: 7,670000000000016 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 6,23
+Tarih :21.11.2024 11:57:44 Hava durumu: Sıcaklık: 7,670000000000016 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 6,23
+Tarih :21.11.2024 14:24:20 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 4,81
+Tarih :21.11.2024 14:42:53 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:46:37 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:46:56 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:48:57 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:49:51 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:52:15 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:53:03 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:55:49 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:57:01 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:59:04 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 14:59:50 Hava durumu: Sıcaklık: 9,330000000000041 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 15:16:20 Hava durumu: Sıcaklık: 9,890000000000043 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 15:16:37 Hava durumu: Sıcaklık: 9,890000000000043 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Batı Rüzgar Hızı: 5,41
+Tarih :21.11.2024 17:27:07 Hava durumu: Sıcaklık: 8,220000000000027 Hava Durumu: Clouds Rüzgar Yönü: Kuzey Rüzgar Hızı: 3,69

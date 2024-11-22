@@ -12,7 +12,7 @@ public interface IDailyWeatherLoger
 public class DailyWeatherLoger : BackgroundService, IDailyWeatherLoger
 {
     public readonly string RequestURL;
-
+    
     public DailyWeatherLoger(IConfiguration configuration)
     {
         try
@@ -32,6 +32,7 @@ public class DailyWeatherLoger : BackgroundService, IDailyWeatherLoger
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        
         //test için her dakika çalışsın
         while (!stoppingToken.IsCancellationRequested)
         {
