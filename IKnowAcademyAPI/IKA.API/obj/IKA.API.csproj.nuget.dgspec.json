@@ -1,0 +1,252 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/IKA.API.csproj": {}
+  },
+  "projects": {
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Bisunness/IKA.API.Bisunness.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Bisunness/IKA.API.Bisunness.csproj",
+        "projectName": "IKA.API.Bisunness",
+        "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Bisunness/IKA.API.Bisunness.csproj",
+        "packagesPath": "/Users/cemalcanyildirim/.nuget/packages/",
+        "outputPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Bisunness/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/cemalcanyildirim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj": {
+                "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj",
+        "projectName": "IKA.API.DataBase",
+        "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj",
+        "packagesPath": "/Users/cemalcanyildirim/.nuget/packages/",
+        "outputPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/cemalcanyildirim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/IKA.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/IKA.API.csproj",
+        "projectName": "IKA.API",
+        "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/IKA.API.csproj",
+        "packagesPath": "/Users/cemalcanyildirim/.nuget/packages/",
+        "outputPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/Users/cemalcanyildirim/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Bisunness/IKA.API.Bisunness.csproj": {
+                "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Bisunness/IKA.API.Bisunness.csproj"
+              },
+              "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj": {
+                "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.DataBase/IKA.API.DataBase.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        }
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

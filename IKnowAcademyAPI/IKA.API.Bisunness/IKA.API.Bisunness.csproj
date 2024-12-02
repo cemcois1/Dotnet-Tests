@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-IKA.API.Services-e6f3a9a4-eac3-4857-85d6-4c082a90343c</UserSecretsId>
+        <RootNamespace>IKA.API.Services</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IKA.API.DataBase\IKA.API.DataBase.csproj" />
+    </ItemGroup>
+</Project>

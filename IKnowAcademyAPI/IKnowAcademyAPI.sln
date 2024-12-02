@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKA.API", "IKA.API\IKA.API.csproj", "{DDEB5DD5-220B-445B-A150-40F21A46E18A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKA.API.Bisunness", "IKA.API.Bisunness\IKA.API.Bisunness.csproj", "{188E83D2-8A4B-4A03-B5CC-5FA4C9D966B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKA.API.DataBase", "IKA.API.DataBase\IKA.API.DataBase.csproj", "{DA1BD429-B094-46C4-8126-4B7990010113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IKA.API.Utilities", "IKA.API.Utilities\IKA.API.Utilities.csproj", "{3BCA2AC9-ED28-425F-AD80-D2AF6A840F5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDEB5DD5-220B-445B-A150-40F21A46E18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEB5DD5-220B-445B-A150-40F21A46E18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEB5DD5-220B-445B-A150-40F21A46E18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEB5DD5-220B-445B-A150-40F21A46E18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{188E83D2-8A4B-4A03-B5CC-5FA4C9D966B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{188E83D2-8A4B-4A03-B5CC-5FA4C9D966B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{188E83D2-8A4B-4A03-B5CC-5FA4C9D966B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{188E83D2-8A4B-4A03-B5CC-5FA4C9D966B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1BD429-B094-46C4-8126-4B7990010113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1BD429-B094-46C4-8126-4B7990010113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1BD429-B094-46C4-8126-4B7990010113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1BD429-B094-46C4-8126-4B7990010113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCA2AC9-ED28-425F-AD80-D2AF6A840F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCA2AC9-ED28-425F-AD80-D2AF6A840F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCA2AC9-ED28-425F-AD80-D2AF6A840F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCA2AC9-ED28-425F-AD80-D2AF6A840F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@IKA.API_HostAddress = http://localhost:5012
+
+GET {{IKA.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

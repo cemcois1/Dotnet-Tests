@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {}
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {}
   },
   "projects": {
-    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ConsoleApp/ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
+        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
+        "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ConsoleApp/ConsoleApp.csproj",
         "packagesPath": "/Users/cemalcanyildirim/.nuget/packages/",
-        "outputPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ConsoleApp/obj/",
+        "outputPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ConsoleApp/obj/",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -21,6 +21,7 @@
           "net9.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

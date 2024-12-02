@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/ToDoAPI.csproj": {}
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ToDoAPI/ToDoAPI.csproj": {}
   },
   "projects": {
-    "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/ToDoAPI.csproj": {
+    "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ToDoAPI/ToDoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/ToDoAPI.csproj",
+        "projectUniqueName": "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ToDoAPI/ToDoAPI.csproj",
         "projectName": "ToDoAPI",
-        "projectPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/ToDoAPI.csproj",
+        "projectPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ToDoAPI/ToDoAPI.csproj",
         "packagesPath": "/Users/cemalcanyildirim/.nuget/packages/",
-        "outputPath": "/Users/cemalcanyildirim/Desktop/Dotnet Tests/ConsoleApp/ToDoAPI/obj/",
+        "outputPath": "/Users/cemalcanyildirim/Desktop/DotnetTests/ConsoleApp/ToDoAPI/obj/",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -21,6 +21,7 @@
           "net9.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
