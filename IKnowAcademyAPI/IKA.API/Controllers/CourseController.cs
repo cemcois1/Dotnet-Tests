@@ -23,7 +23,7 @@ public class CourseController : ControllerBase
     {
         var courses = await _courseDataCrudService.GetAllCourseData();
 
-        if (courses == null || !courses.Any())
+        if (!courses.Any())
         {
             return NotFound("No courses available.");
         }
@@ -47,7 +47,7 @@ public class CourseController : ControllerBase
     {
         //add validation here
         var validator = new CourseValidator();
-        var result=validator.Validate(course, options=>options.IncludeRuleSets("Add"));
+        var result=await validator.ValidateAsync(course, options=>options.IncludeRuleSets("Add"));
         if (!result.IsValid)
         {
             throw new ValidationException(result.Errors);
@@ -58,10 +58,19 @@ public class CourseController : ControllerBase
         Console.WriteLine(course);
         return Ok("Course added successfully.");
     }
-    [HttpPost("update")]
+    [HttpPut("update")]
     public void UpdateCourse([FromBody] Course course)
     {
         _courseDataCrudService.UpdateCourse(course);
+    }
+    
+    //get all card infos
+    [HttpGet("cards")]
+    public  IActionResult GetCardInfos()
+    {
+        var cards =  _courseDataCrudService.GetMainPageCourseData();
+        Console.WriteLine(cards);
+        return Ok(cards);
     }
 }
 

@@ -8,7 +8,7 @@ namespace IKA.API.DataBase.Repositories;
 /// </typeparam>
 internal interface IRepository<T1,T2> where T1:IBaseEntity where T2:Microsoft.EntityFrameworkCore.DbContext
 {
-    public T2 _DbContext { get; set; }
+     T2 _DbContext { get; set; }
     public Task Add(T1 entity);
     public Task Update(T1 entity);
     public Task  Delete(T1 entity);

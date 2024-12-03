@@ -15,7 +15,6 @@ public sealed class CourseRepository : IRepository<Course, AppDbContext>
     public async Task Add(Course entity)
     {
         _DbContext.Courses.Add(entity);
-        
         await _DbContext.SaveChangesAsync();
     }
 

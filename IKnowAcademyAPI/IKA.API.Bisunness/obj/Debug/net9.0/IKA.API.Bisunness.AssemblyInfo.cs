@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IKA.API.Bisunness")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+090bca6d38e40b3fa438adb08132b4ed8d082abd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad9b1987a0f3ed9262f7a13cd888a12f5121d2f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("IKA.API.Bisunness")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IKA.API.Bisunness")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

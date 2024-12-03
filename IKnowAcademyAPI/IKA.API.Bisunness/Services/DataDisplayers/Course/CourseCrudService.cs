@@ -24,7 +24,12 @@ public class CourseCrudService : ICourseDataCRUDService
 
     public async Task<List<CourseData?>> GetAllCourseData()
     {
-        return await GetShowableCourses.ToListAsync();
+        return await GetShowableCourses
+            .Include(course => course.CourseCard)
+            .Include(course => course.RatingData)
+            .Include(course => course.CourseDetails)
+            .ThenInclude(details=>details.CourseContent)
+            .ToListAsync();
     }
 
 
@@ -52,7 +57,6 @@ public class CourseCrudService : ICourseDataCRUDService
         UpdateCourseUpdateDates(course);
         await CourseRepository.Update(course);
     }
-
 
     public async void DeleteCourse(DataBase.Entities.Course.Course course)
     {
