@@ -19,7 +19,10 @@ public class CourseCrudService : ICourseDataCRUDService
 
     public List<CourseCard?> GetMainPageCourseData()
     {
-        return GetShowableCourses.Select(course => course.CourseCard).ToList();
+        return GetShowableCourses
+            .Include(course => course.CourseCard) // CourseCard ilişkisini dahil et
+            .Select(course => course.CourseCard) // Sadece CourseCard döndür
+            .ToList();
     }
 
     public async Task<List<CourseData?>> GetAllCourseData()
