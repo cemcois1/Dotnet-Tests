@@ -1,5 +1,7 @@
+using FluentValidation;
 using IKA.API.DataBase.Entities.Course;
 using IKA.API.Services.Services.DataDisplayers.Course;
+using IKA.API.Validators;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IKA.API.Controllers;
@@ -9,7 +11,7 @@ namespace IKA.API.Controllers;
 public class CourseController : ControllerBase
 {
     private readonly ICourseDataCRUDService _courseDataCrudService;
-
+    
     public CourseController(ICourseDataCRUDService courseDataCrudService)
     {
         _courseDataCrudService = courseDataCrudService;
@@ -17,9 +19,10 @@ public class CourseController : ControllerBase
 
     // Show all courses
     [HttpGet]
-    public IActionResult GetAllCourses()
+    public async Task<IActionResult> GetAllCourses()
     {
-        var courses = _courseDataCrudService.GetMainPageCourseData();
+        var courses = await _courseDataCrudService.GetAllCourseData();
+
         if (courses == null || !courses.Any())
         {
             return NotFound("No courses available.");
@@ -40,9 +43,20 @@ public class CourseController : ControllerBase
     }
     
     [HttpPost("add")]
-    public void AddCourse([FromBody] Course course)
+    public async Task<IActionResult>  AddCourse([FromBody] Course course)
     {
-        _courseDataCrudService.AddCourse(course);
+        //add validation here
+        var validator = new CourseValidator();
+        var result=validator.Validate(course, options=>options.IncludeRuleSets("Add"));
+        if (!result.IsValid)
+        {
+            throw new ValidationException(result.Errors);
+        }
+
+        await _courseDataCrudService.AddCourse(course);
+        Console.WriteLine("Course added successfully.");
+        Console.WriteLine(course);
+        return Ok("Course added successfully.");
     }
     [HttpPost("update")]
     public void UpdateCourse([FromBody] Course course)

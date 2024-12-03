@@ -12,22 +12,23 @@ public sealed class CourseRepository : IRepository<Course, AppDbContext>
         _DbContext = dbContext;
     }
 
-    public Task Add(Course entity)
+    public async Task Add(Course entity)
     {
         _DbContext.Courses.Add(entity);
-        return _DbContext.SaveChangesAsync();
+        
+        await _DbContext.SaveChangesAsync();
     }
 
-    public Task Update(Course entity)
+    public async Task Update(Course entity)
     {
         _DbContext.Courses.Update(entity);
-        return _DbContext.SaveChangesAsync();
+        await _DbContext.SaveChangesAsync();
     }
 
-    public Task Delete(Course entity)
+    public async Task Delete(Course entity)
     {
         _DbContext.Courses.Remove(entity);
-        return _DbContext.SaveChangesAsync();
+        await _DbContext.SaveChangesAsync();
     }
 
     public async Task<Course?> GetById(int id)

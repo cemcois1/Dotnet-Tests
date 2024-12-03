@@ -11,9 +11,10 @@ public interface ICourseDataCRUDService
         set;
     }
     public List<CourseCard?> GetMainPageCourseData();
+    public Task<List<CourseData?>> GetAllCourseData();
     CourseData? GetCourseData(int id);
     
-    public void AddCourse(CourseData course);
+    public Task AddCourse(CourseData course);
     public void UpdateCourse(CourseData course);
     public void DeleteCourse(CourseData course);
 }

@@ -1,6 +1,8 @@
 using IKA.API.DataBase.Entities.Course;
 using IKA.API.DataBase.Repositories;
-using CourseData=IKA.API.DataBase.Entities.Course.Course;
+using Microsoft.EntityFrameworkCore;
+using CourseData = IKA.API.DataBase.Entities.Course.Course;
+
 namespace IKA.API.Services.Services.DataDisplayers.Course;
 
 public class CourseCrudService : ICourseDataCRUDService
@@ -12,31 +14,57 @@ public class CourseCrudService : ICourseDataCRUDService
         CourseRepository = courseRepository;
     }
 
-    private IQueryable<CourseData?> GetShowableCourses =>
+    private IQueryable<DataBase.Entities.Course.Course?> GetShowableCourses =>
         CourseRepository._DbContext.Courses.Where(course => course.IsDeleted == false);
 
     public List<CourseCard?> GetMainPageCourseData()
     {
         return GetShowableCourses.Select(course => course.CourseCard).ToList();
     }
-    
-    public CourseData GetCourseData(int id)
+
+    public async Task<List<CourseData?>> GetAllCourseData()
+    {
+        return await GetShowableCourses.ToListAsync();
+    }
+
+
+    public DataBase.Entities.Course.Course GetCourseData(int id)
     {
         return GetShowableCourses.FirstOrDefault(course => course.Id == id);
     }
 
-    public void AddCourse(CourseData course)
+    public async Task AddCourse(DataBase.Entities.Course.Course course)
     {
-        CourseRepository.Add(course);
+        course.CreatedAt = DateTime.Now;
+        course.CourseCard.CreatedAt = DateTime.Now;
+        course.RatingData.CreatedAt = DateTime.Now;
+        course.CourseDetails.CreatedAt = DateTime.Now;
+
+
+        UpdateCourseUpdateDates(course);
+
+
+        await CourseRepository.Add(course);
     }
 
-    public void UpdateCourse(CourseData course)
+    public async void UpdateCourse(DataBase.Entities.Course.Course course)
     {
-        CourseRepository.Update(course);
+        UpdateCourseUpdateDates(course);
+        await CourseRepository.Update(course);
     }
 
-    public void DeleteCourse(CourseData course)
+
+    public async void DeleteCourse(DataBase.Entities.Course.Course course)
     {
-        CourseRepository.Delete(course);
+        course.IsDeleted = true;
+        await CourseRepository.Update(course);
+    }
+
+    private void UpdateCourseUpdateDates(CourseData course)
+    {
+        course.UpdatedAt = DateTime.Now;
+        course.CourseCard.UpdatedAt = DateTime.Now;
+        course.CourseDetails.UpdatedAt = DateTime.Now;
+        course.RatingData.UpdatedAt = DateTime.Now;
     }
 }

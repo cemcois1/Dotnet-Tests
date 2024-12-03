@@ -248,3 +248,6 @@
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/FluentValidation.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/FluentValidation.AspNetCore.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
