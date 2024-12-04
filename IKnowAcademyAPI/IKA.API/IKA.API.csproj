@@ -7,6 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.2" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.Core" Version="8.0.1" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="8.0.1" />
         <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
@@ -15,14 +18,16 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="9.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.1.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.1.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.1.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\IKA.API.Bisunness\IKA.API.Bisunness.csproj" />
+      <ProjectReference Include="..\IKA.API.Business\IKA.API.Business.csproj" />
       <ProjectReference Include="..\IKA.API.DataBase\IKA.API.DataBase.csproj" />
+      <ProjectReference Include="..\IKA.API.Utilities\IKA.API.Utilities.csproj" />
     </ItemGroup>
 
 </Project>

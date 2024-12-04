@@ -1,0 +1,13 @@
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/bin/Debug/net9.0/IKA.API.Utilities.deps.json
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/bin/Debug/net9.0/IKA.API.Utilities.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/bin/Debug/net9.0/IKA.API.Utilities.pdb
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.csproj.AssemblyReference.cache
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.AssemblyInfoInputs.cache
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.AssemblyInfo.cs
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.csproj.CoreCompileInputs.cache
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.sourcelink.json
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/refint/IKA.API.Utilities.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/IKA.API.Utilities.pdb
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Utilities/obj/Debug/net9.0/ref/IKA.API.Utilities.dll

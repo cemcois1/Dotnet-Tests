@@ -11,7 +11,7 @@ namespace IKA.API.Controllers;
 public class CourseController : ControllerBase
 {
     private readonly ICourseDataCRUDService _courseDataCrudService;
-    
+
     public CourseController(ICourseDataCRUDService courseDataCrudService)
     {
         _courseDataCrudService = courseDataCrudService;
@@ -27,6 +27,7 @@ public class CourseController : ControllerBase
         {
             return NotFound("No courses available.");
         }
+
         return Ok(courses);
     }
 
@@ -39,15 +40,16 @@ public class CourseController : ControllerBase
         {
             return NotFound($"Course with ID {id} not found.");
         }
+
         return Ok(course);
     }
-    
+
     [HttpPost("add")]
-    public async Task<IActionResult>  AddCourse([FromBody] Course course)
+    public async Task<IActionResult> AddCourse([FromBody] Course course)
     {
         //add validation here
         var validator = new CourseValidator();
-        var result=await validator.ValidateAsync(course, options=>options.IncludeRuleSets("Add"));
+        var result = await validator.ValidateAsync(course, options => options.IncludeRuleSets("Add"));
         if (!result.IsValid)
         {
             throw new ValidationException(result.Errors);
@@ -58,19 +60,19 @@ public class CourseController : ControllerBase
         Console.WriteLine(course);
         return Ok("Course added successfully.");
     }
+
     [HttpPut("update")]
     public void UpdateCourse([FromBody] Course course)
     {
         _courseDataCrudService.UpdateCourse(course);
     }
-    
+
     //get all card infos
     [HttpGet("cards")]
-    public  IActionResult GetCardInfos()
+    public IActionResult GetCardInfos()
     {
-        var cards =  _courseDataCrudService.GetMainPageCourseData();
+        var cards = _courseDataCrudService.GetMainPageCourseData();
         Console.WriteLine(cards);
         return Ok(cards);
     }
 }
-
