@@ -23,7 +23,8 @@ builder.Services.AddControllers();
 builder.Services.AddHealthChecks()
     .AddSqlServerHealthCheck(connectionString)
     .AddMemoryHealthCheck(100)
-    .AddGoogleHealthCheck();
+    .AddGoogleHealthCheck()
+    .AddStorgeHealthCheck();
 
     //.AddSqlServer(
     //    connectionString: builder.Configuration["ConnectionStrings:DefaultConnection"],

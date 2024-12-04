@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
@@ -9,6 +10,27 @@ public static class HealthChecksExtensions
     public static IHealthChecksBuilder AddGoogleHealthCheck(this IHealthChecksBuilder healthChecksBuilder)
     {
         healthChecksBuilder.AddUrlGroup(new Uri("https://www.google.com/"), name: "Google Health Check", timeout: TimeSpan.FromSeconds(5));
+        return healthChecksBuilder;
+    }
+    
+    public static IHealthChecksBuilder AddStorgeHealthCheck(this IHealthChecksBuilder healthChecksBuilder)
+    {
+        healthChecksBuilder.AddDiskStorageHealthCheck(setup: setup =>
+        {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) // MacOS kontrolü
+            {
+                setup.AddDrive("/Users", minimumFreeMegabytes: 500); // MacOS'taki "Users" dizinini kontrol et
+            }
+            else if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) // Windows kontrolü
+            {
+                setup.AddDrive("C:\\", minimumFreeMegabytes: 500); // Windows'taki "C:\\" sürücüsünü kontrol et
+            }
+            else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux)) // Linux kontrolü
+            {
+                setup.AddDrive("/mnt/data", minimumFreeMegabytes: 500); // Linux'taki "/mnt/data" mount noktasını kontrol et
+            }
+        },
+            name: "Storage Health Check", failureStatus: HealthStatus.Degraded);
         return healthChecksBuilder;
     }
     

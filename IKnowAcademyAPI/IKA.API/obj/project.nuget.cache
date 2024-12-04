@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qnslPlntMpY=",
+  "dgSpecHash": "NiQMGjIHTZY=",
   "success": true,
   "projectFilePath": "/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/IKA.API.csproj",
   "expectedPackageFiles": [
     "/Users/cemalcanyildirim/.nuget/packages/aspnetcore.healthchecks.sqlserver/8.0.2/aspnetcore.healthchecks.sqlserver.8.0.2.nupkg.sha512",
+    "/Users/cemalcanyildirim/.nuget/packages/aspnetcore.healthchecks.system/8.0.1/aspnetcore.healthchecks.system.8.0.1.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/aspnetcore.healthchecks.ui.core/8.0.1/aspnetcore.healthchecks.ui.core.8.0.1.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/aspnetcore.healthchecks.ui.data/8.0.1/aspnetcore.healthchecks.ui.data.8.0.1.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/aspnetcore.healthchecks.ui.inmemory.storage/8.0.1/aspnetcore.healthchecks.ui.inmemory.storage.8.0.1.nupkg.sha512",
@@ -112,6 +113,7 @@
     "/Users/cemalcanyildirim/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/Users/cemalcanyildirim/.nuget/packages/system.serviceprocess.servicecontroller/8.0.0/system.serviceprocess.servicecontroller.8.0.0.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
     "/Users/cemalcanyildirim/.nuget/packages/system.text.json/9.0.0/system.text.json.9.0.0.nupkg.sha512",
