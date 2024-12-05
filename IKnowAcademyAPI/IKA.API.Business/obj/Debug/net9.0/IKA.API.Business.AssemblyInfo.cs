@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IKA.API.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f77395c77f74e7dcd5a4f5212118a1dc0cc360d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae4731ffe6aa51fedd71478692bd5c566505f762")]
 [assembly: System.Reflection.AssemblyProductAttribute("IKA.API.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IKA.API.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

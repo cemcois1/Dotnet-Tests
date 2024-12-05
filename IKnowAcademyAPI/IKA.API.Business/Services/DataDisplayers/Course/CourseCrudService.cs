@@ -8,10 +8,11 @@ namespace IKA.API.Services.Services.DataDisplayers.Course;
 public class CourseCrudService : ICourseDataCRUDService
 {
     public CourseRepository CourseRepository { get; set; }
-
-    public CourseCrudService(CourseRepository courseRepository)
+    private readonly ILogger<CourseCrudService> logger;
+    public CourseCrudService(CourseRepository courseRepository,ILogger<CourseCrudService> logger)
     {
         CourseRepository = courseRepository;
+        this.logger = logger;
     }
 
     private IQueryable<DataBase.Entities.Course.Course?> GetShowableCourses =>
@@ -19,59 +20,118 @@ public class CourseCrudService : ICourseDataCRUDService
 
     public List<CourseCard?> GetMainPageCourseData()
     {
-        return GetShowableCourses
-            .Include(course => course.CourseCard) // CourseCard ilişkisini dahil et
-            .Select(course => course.CourseCard) // Sadece CourseCard döndür
-            .ToList();
+        try
+        {
+            return GetShowableCourses
+                .Include(course => course.CourseCard) // CourseCard ilişkisini dahil et
+                .Select(course => course.CourseCard) // Sadece CourseCard döndür
+                .ToList();
+        }
+        catch (Exception e)
+        {
+            logger.LogError("Ana Sayfa Kursları Getirilirken Hata Oluştu." + e);
+            throw;
+        }
+
     }
 
     public async Task<List<CourseData?>> GetAllCourseData()
     {
-        return await GetShowableCourses
-            .Include(course => course.CourseCard)
-            .Include(course => course.RatingData)
-            .Include(course => course.CourseDetails)
-            .ThenInclude(details=>details.CourseContent)
-            .ToListAsync();
+        try
+        {
+            return await GetShowableCourses
+                .Include(course => course.CourseCard)
+                .Include(course => course.RatingData)
+                .Include(course => course.CourseDetails)
+                .ThenInclude(details => details.CourseContent)
+                .ToListAsync();
+        }
+        catch (Exception e)
+        {
+            logger.LogError("Tüm Kursların bilgileri Getirilirken Hata Oluştu." + e);
+            throw;
+        }
     }
 
 
     public DataBase.Entities.Course.Course GetCourseData(int id)
     {
-        return GetShowableCourses.FirstOrDefault(course => course.Id == id);
+        try
+        {
+            return GetShowableCourses.FirstOrDefault(course => course.Id == id);
+        }
+        catch (Exception e)
+        {
+            logger.LogError($"{id}Kurs bilgileri getirilirken hata oluştu." + e);
+            throw;
+        }
     }
 
     public async Task AddCourse(DataBase.Entities.Course.Course course)
     {
-        course.CreatedAt = DateTime.Now;
-        course.CourseCard.CreatedAt = DateTime.Now;
-        course.RatingData.CreatedAt = DateTime.Now;
-        course.CourseDetails.CreatedAt = DateTime.Now;
+        try
+        {
+            course.CreatedAt = DateTime.Now;
+            course.CourseCard.CreatedAt = DateTime.Now;
+            course.RatingData.CreatedAt = DateTime.Now;
+            course.CourseDetails.CreatedAt = DateTime.Now;
 
 
-        UpdateCourseUpdateDates(course);
+            UpdateCourseUpdateDates(course);
 
 
-        await CourseRepository.Add(course);
+            await CourseRepository.Add(course);
+        }
+        catch (Exception e)
+        {
+            logger.LogError("Kurs eklenirken hata oluştu." + e);
+            throw;
+        }
     }
 
     public async void UpdateCourse(DataBase.Entities.Course.Course course)
     {
-        UpdateCourseUpdateDates(course);
-        await CourseRepository.Update(course);
+        try
+        {
+            UpdateCourseUpdateDates(course);
+            await CourseRepository.Update(course);
+        }
+        catch (Exception e)
+        {
+            logger.LogError("Kurs güncellenirken hata oluştu." + e);
+            throw;
+        }
     }
 
     public async void DeleteCourse(DataBase.Entities.Course.Course course)
     {
-        course.IsDeleted = true;
-        await CourseRepository.Update(course);
+        try
+        {
+            course.IsDeleted = true;
+            await CourseRepository.Update(course);
+        }
+        catch (Exception e)
+        {
+            logger.LogError("Kurs silinirken hata oluştu." + e);
+            throw;
+        }
+
     }
 
     private void UpdateCourseUpdateDates(CourseData course)
     {
-        course.UpdatedAt = DateTime.Now;
-        course.CourseCard.UpdatedAt = DateTime.Now;
-        course.CourseDetails.UpdatedAt = DateTime.Now;
-        course.RatingData.UpdatedAt = DateTime.Now;
+        try
+        {
+            course.UpdatedAt = DateTime.Now;
+            course.CourseCard.UpdatedAt = DateTime.Now;
+            course.CourseDetails.UpdatedAt = DateTime.Now;
+            course.RatingData.UpdatedAt = DateTime.Now;
+        }
+        catch (Exception e)
+        {
+            logger.LogError("Kurs tarihleri güncellenirken hata oluştu." + e);
+            throw;
+        }
+
     }
 }

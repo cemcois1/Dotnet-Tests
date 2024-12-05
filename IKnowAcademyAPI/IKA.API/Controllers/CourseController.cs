@@ -3,6 +3,7 @@ using IKA.API.DataBase.Entities.Course;
 using IKA.API.Services.Services.DataDisplayers.Course;
 using IKA.API.Validators;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace IKA.API.Controllers;
 
@@ -11,16 +12,27 @@ namespace IKA.API.Controllers;
 public class CourseController : ControllerBase
 {
     private readonly ICourseDataCRUDService _courseDataCrudService;
-
-    public CourseController(ICourseDataCRUDService courseDataCrudService)
+    private readonly ILogger<CourseController> _logger;
+    public CourseController(ICourseDataCRUDService courseDataCrudService, ILogger<CourseController> logger)
     {
-        _courseDataCrudService = courseDataCrudService;
+
+        try
+        {
+            _courseDataCrudService = courseDataCrudService;
+            _logger = logger;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
     }
 
     // Show all courses
     [HttpGet]
     public async Task<IActionResult> GetAllCourses()
     {
+        _logger.LogWarning("Getting all courses."+DateTime.Now);
         var courses = await _courseDataCrudService.GetAllCourseData();
 
         if (!courses.Any())
