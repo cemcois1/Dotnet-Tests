@@ -24,7 +24,11 @@ public class CourseCrudService : ICourseDataCRUDService
         {
             return GetShowableCourses
                 .Include(course => course.CourseCard) // CourseCard ilişkisini dahil et
-                .Select(course => course.CourseCard) // Sadece CourseCard döndür
+                .Select(course => course.CourseCard)
+                .OrderByDescending(
+                    
+                    x => x.Order
+                )
                 .ToList();
         }
         catch (Exception e)
