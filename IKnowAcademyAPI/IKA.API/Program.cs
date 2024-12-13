@@ -31,7 +31,6 @@ try
         .AddMemoryHealthCheck(100)
         .AddGoogleHealthCheck()
         .AddStorgeHealthCheck();
-
 }
 catch (Exception e)
 {
