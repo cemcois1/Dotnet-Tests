@@ -280,3 +280,5 @@
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/Serilog.Extensions.dll
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/Serilog.Formatting.Compact.dll
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/Serilog.Sinks.Debug.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/MySqlConnector.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll

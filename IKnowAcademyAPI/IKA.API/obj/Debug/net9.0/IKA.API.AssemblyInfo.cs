@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IKA.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2197a721836c2b5f40ae3da131962c1aa9b01545")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30815265d72ef38d0740da392b4a4f1f59e4e838")]
 [assembly: System.Reflection.AssemblyProductAttribute("IKA.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IKA.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

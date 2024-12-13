@@ -1,12 +1,8 @@
 using IKA.API.DataBase.DbContext;
 using IKA.API.DataBase.Repositories;
 using IKA.API.Services.Services.DataDisplayers.Course;
-using IKA.API.Utilities;
 using IKA.API.Utilities.HealthCheck;
 using IKA.API.Utilities.Loggger;
-using Microsoft.EntityFrameworkCore;
-using Serilog;
-using ILogger = Microsoft.Extensions.Logging.ILogger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,7 +23,7 @@ try
 {
     builder.Services.AddScoped<CourseRepository>();
     builder.Services.AddScoped<ICourseDataCRUDService, CourseCrudService>();
-    builder.Services.AddDbContext<AppDbContext>(options => { options.UseSqlServer(connectionString); });
+    builder.Services.IntegrateAppDbContext(connectionString);
 
     builder.Services.AddControllers();
     builder.Services.AddHealthChecks()

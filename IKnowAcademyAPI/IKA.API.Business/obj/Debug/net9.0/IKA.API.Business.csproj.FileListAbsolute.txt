@@ -90,3 +90,5 @@
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Business/obj/Debug/net9.0/IKA.API.Business.pdb
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Business/obj/Debug/net9.0/IKA.API.Business.genruntimeconfig.cache
 /Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Business/obj/Debug/net9.0/ref/IKA.API.Business.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Business/bin/Debug/net9.0/MySqlConnector.dll
+/Users/cemalcanyildirim/Desktop/DotnetTests/IKnowAcademyAPI/IKA.API.Business/bin/Debug/net9.0/Pomelo.EntityFrameworkCore.MySql.dll

@@ -3936,7 +3936,6 @@
       "AspNetCore.HealthChecks.System >= 8.0.1",
       "AspNetCore.HealthChecks.Uris >= 8.0.1",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
-      "Microsoft.Data.SqlClient >= 5.2.0",
       "Microsoft.Extensions.DependencyInjection >= 9.0.0",
       "Microsoft.Extensions.Diagnostics.HealthChecks >= 9.0.0",
       "Serilog.Extensions >= 8.0.3",
@@ -4003,10 +4002,6 @@
           "Microsoft.AspNetCore.Http.Abstractions": {
             "target": "Package",
             "version": "[2.2.0, )"
-          },
-          "Microsoft.Data.SqlClient": {
-            "target": "Package",
-            "version": "[5.2.0, )"
           },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",

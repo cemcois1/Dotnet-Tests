@@ -1,7 +1,6 @@
 ﻿using IKA.API.DataBase.Entities.Course;
 using IKA.API.DataBase.Entities.UserContact;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace IKA.API.DataBase.DbContext;
@@ -14,4 +13,12 @@ public class AppDbContext:Microsoft.EntityFrameworkCore.DbContext
     }
     public DbSet<Course> Courses { get; set; }
     public DbSet<UserContact> Users{ get; set; }
+}
+
+public static class AppDbContextExtensions
+{
+    public static void IntegrateAppDbContext(this IServiceCollection services, string connectionString)
+    {
+        services.AddDbContext<AppDbContext>(options => { options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString)); });
+    }
 }

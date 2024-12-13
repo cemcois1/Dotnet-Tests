@@ -16,13 +16,9 @@
           "IKA.API.DataBase": "1.0.0",
           "IKA.API.Utilities": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "9.0.0",
-          "Microsoft.EntityFrameworkCore": "9.0.0",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.0",
-          "Serilog": "4.1.0",
-          "Serilog.Extensions.Hosting": "8.0.0",
-          "Serilog.Settings.Configuration": "8.0.4",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "6.0.0",
           "Swashbuckle.AspNetCore.Swagger": "7.1.0",
@@ -1057,6 +1053,17 @@
           }
         }
       },
+      "MySqlConnector/2.3.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.5.0"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -1076,18 +1083,30 @@
           }
         }
       },
-      "Serilog/4.1.0": {
+      "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.0",
+          "MySqlConnector": "2.3.5"
+        },
+        "runtime": {
+          "lib/net8.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.0"
+          }
+        }
+      },
+      "Serilog/4.0.0": {
         "runtime": {
           "lib/net8.0/Serilog.dll": {
-            "assemblyVersion": "4.1.0.0",
-            "fileVersion": "4.1.0.0"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
       "Serilog.AspNetCore/8.0.3": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "9.0.0",
-          "Serilog": "4.1.0",
+          "Serilog": "4.0.0",
           "Serilog.Extensions.Hosting": "8.0.0",
           "Serilog.Formatting.Compact": "2.0.0",
           "Serilog.Settings.Configuration": "8.0.4",
@@ -1104,7 +1123,7 @@
       },
       "Serilog.Enrichers.Environment/3.0.1": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Enrichers.Environment.dll": {
@@ -1115,7 +1134,7 @@
       },
       "Serilog.Enrichers.Process/3.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Enrichers.Process.dll": {
@@ -1126,7 +1145,7 @@
       },
       "Serilog.Enrichers.Thread/4.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Enrichers.Thread.dll": {
@@ -1137,7 +1156,7 @@
       },
       "Serilog.Expressions/5.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Expressions.dll": {
@@ -1171,7 +1190,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0",
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "9.0.0",
-          "Serilog": "4.1.0",
+          "Serilog": "4.0.0",
           "Serilog.Extensions.Logging": "8.0.0"
         },
         "runtime": {
@@ -1184,7 +1203,7 @@
       "Serilog.Extensions.Logging/8.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "9.0.0",
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Extensions.Logging.dll": {
@@ -1195,7 +1214,7 @@
       },
       "Serilog.Formatting.Compact/2.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net7.0/Serilog.Formatting.Compact.dll": {
@@ -1208,7 +1227,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration.Binder": "9.0.0",
           "Microsoft.Extensions.DependencyModel": "9.0.0",
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Settings.Configuration.dll": {
@@ -1219,7 +1238,7 @@
       },
       "Serilog.Sinks.Console/6.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Sinks.Console.dll": {
@@ -1230,7 +1249,7 @@
       },
       "Serilog.Sinks.Debug/2.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {
@@ -1241,7 +1260,7 @@
       },
       "Serilog.Sinks.File/6.0.0": {
         "dependencies": {
-          "Serilog": "4.1.0"
+          "Serilog": "4.0.0"
         },
         "runtime": {
           "lib/net8.0/Serilog.Sinks.File.dll": {
@@ -1501,7 +1520,8 @@
       },
       "IKA.API.DataBase/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.2"
         },
         "runtime": {
           "IKA.API.DataBase.dll": {
@@ -1516,7 +1536,6 @@
           "AspNetCore.HealthChecks.System": "8.0.1",
           "AspNetCore.HealthChecks.Uris": "8.0.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.0",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "9.0.0",
           "Serilog.Extensions": "8.0.3",
@@ -2112,6 +2131,13 @@
       "path": "mono.texttemplating/3.0.0",
       "hashPath": "mono.texttemplating.3.0.0.nupkg.sha512"
     },
+    "MySqlConnector/2.3.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AmEfUPkFl+Ev6jJ8Dhns3CYHBfD12RHzGYWuLt6DfG6/af6YvOMyPz74ZPPjBYQGRJkumD2Z48Kqm8s5DJuhLA==",
+      "path": "mysqlconnector/2.3.5",
+      "hashPath": "mysqlconnector.2.3.5.nupkg.sha512"
+    },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -2126,12 +2152,19 @@
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
-    "Serilog/4.1.0": {
+    "Pomelo.EntityFrameworkCore.MySql/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-u1aZI8HZ62LWlq5dZLFwm6jMax/sUwnWZSw5lkPsCt518cJBxFKoNmc7oSxe5aA5BgSkzy9rzwFGR/i/acnSPw==",
-      "path": "serilog/4.1.0",
-      "hashPath": "serilog.4.1.0.nupkg.sha512"
+      "sha512": "sha512-XjnlcxVBLnEMbyEc5cZzgZeDyLvAniACZQ04W1slWN0f4rmfNzl98gEMvHnFH0fMDF06z9MmgGi/Sr7hJ+BVnw==",
+      "path": "pomelo.entityframeworkcore.mysql/8.0.2",
+      "hashPath": "pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512"
+    },
+    "Serilog/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2jDkUrSh5EofOp7Lx5Zgy0EB+7hXjjxE2ktTb1WVQmU00lDACR2TdROGKU0K1pDTBSJBN1PqgYpgOZF8mL7NJw==",
+      "path": "serilog/4.0.0",
+      "hashPath": "serilog.4.0.0.nupkg.sha512"
     },
     "Serilog.AspNetCore/8.0.3": {
       "type": "package",
